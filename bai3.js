@@ -33,5 +33,5 @@ var courses = [
 
 ]
 courses.forEach(function(course,index){
-    console.log(course)
+    console.log(index,course)
 })
