@@ -32,6 +32,7 @@ var courses = [
 
 ];
 var totalCoin = courses.reduce(function (total,course){
+    i++
+    console.log(i , total);
     return total+course.coin
-},0);
-console.log(totalCoin)
+});
