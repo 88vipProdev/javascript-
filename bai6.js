@@ -26,9 +26,16 @@ var courses = [
         coin :500
     },
 ];
-    function coursesHandle()
+    function coursesHandle(courses,index)
     {
-        
+        return {
+            id :courses.id,
+            nam:`khoa hoc: ${courses.nam}`,
+            coin : courses.coin,
+            coinText : `gia:${courses.coin}`,
+            index:index
+
+        };
     }
 var newCourse = courses.map(coursesHandle);
 console.log(newCourse)

@@ -28,10 +28,9 @@ var courses = [
 
 ];
 
-var totalCoin = 0 ;
-for (var courses of courses)
-    {
-        totalCoin +=courses.coin
-    }
+function coinHandle()
+{
 
-    console.log(totalCoin)
+}
+
+var totalCoin = courses.reduce(coinHandle,0)
