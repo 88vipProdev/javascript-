@@ -48,3 +48,4 @@ function coinHandle (accumulator ,currentValue,currentIndex,originArray){
 
 }
 var totalCoin = courses.reduce(coinHandle, 0);
+console.log(totalCoin)
