@@ -34,11 +34,17 @@ var courses = [
 var i= 0 
 function coinHandle (accumulator ,currentValue,currentIndex,originArray){
     i++;
+    var total = accumulator+currentValue.coin;
     console.table({
         'luot chay':i,
-        'bien tich tru:':accumulator
-    });
+        'bien tich tru:':accumulator,
+        'gia khoa hoc :':currentValue.coin,
+        'tich tru duoc':total
 
-    console.log(currentValue);
+
+    });
+    return total;
+
+
 }
 var totalCoin = courses.reduce(coinHandle, 0);
